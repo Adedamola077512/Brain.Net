@@ -1,0 +1,66 @@
+.Intelligence {
+    background-color: #091c37;
+    padding: 50px;
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+}
+.Intelligence-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.Intelligence-img {
+    width: 500px;
+    /* height: 400px; */
+}
+.Intelligence-section {
+    text-align: right;
+}
+.Intelligence-span {
+    border: 2px solid rgb(248, 50, 50);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 3%;
+}
+.Intelligence-h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 65px;
+    /* letter-spacing: 0px; */
+}
+.Intelligence-p {
+    font-family: Inter;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .Intelligence {
+        width: 100%;
+        height: auto;
+    }
+    .Intelligence-flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    .Intelligence-section {
+        text-align: center;
+    }
+    .Intelligence-img {
+        width: 350px;
+        height: 100%;
+    }
+    .Intelligence-h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .Intelligence-p {
+        font-size: 8px;
+    }
+}

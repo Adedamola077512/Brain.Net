@@ -1,0 +1,110 @@
+.project-span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid rgba(224, 63, 63, 1);
+}
+.project-h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 73px;
+    line-height: 92px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+}
+.project-card {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+.project-card-h1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.project-card-p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    
+}
+.project-card-span {
+    width: 3px;            /* Thickness of the line */
+    height: 100px;         /* Length of the line */
+    background-color: rgba(224, 63, 63, 1);
+    margin: 20px;          /* Optional margin around it */
+    border-radius: 2px;   /* Optional: rounded edges for a softer look */
+}
+.project-card-span1 {
+    background-color: rgba(224, 63, 63, 1);
+    width: 80px; /* Adjust length as needed */
+    height: 3px; /* Thickness of the line */ /* Color (can be changed) */
+    margin: 20px auto; /* Center the line horizontally */
+    border-radius: 2px; /* Optional: rounded edges for a softer look */
+}
+.project-card-img {
+    background-color: #091c37;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 50%;
+}
+.project-card-img:hover {
+    background-color: #0a2b4d;
+    transition: all 0.3s ease-in-out;
+}
+.project-img {
+    margin-top: 25px;
+}
+.project-img-1 {
+    margin-top: 50px;
+}
+.project-card-1 {
+    display: flex;
+    justify-content: end;
+    color: white;
+    text-align: right;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .project-h1 {
+        font-size: 35px;
+    }
+    .project-card-p {
+        font-size: 8px;
+    }
+    .project-card-img {
+        width: 150px;
+        height: 100px;
+        border-radius: 50%;
+        display: none;
+    }
+    .project-img {
+        /* margin-top: 25px; */
+        width: 70;
+        height: 70%;
+    }
+    .project-card-span {
+        width: 3px;            /* Thickness of the line */
+        height: 50px;         /* Length of the line */
+        background-color: rgba(224, 63, 63, 1);
+        margin: 20px;          /* Optional margin around it */
+        border-radius: 2px;   /* Optional: rounded edges for a softer look */
+    }
+    
+}

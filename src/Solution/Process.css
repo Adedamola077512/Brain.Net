@@ -1,0 +1,73 @@
+.process {
+    background-image: url(/src/assets/Group\ 397.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    color: white;
+    border-radius: 20px;
+}
+.process-span {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 190%;
+    letter-spacing: 5%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: rgb(253, 69, 69);
+}
+.process-need {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    border: 2px solid rgb(253, 69, 69);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.process-h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 73px;
+    line-height: 92px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.process-p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+}
+.process-web {
+    background-color: rgb(253, 69, 69);
+    border-radius: 20px;
+    padding: 10px 50px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 190%;
+    letter-spacing: 5%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .process-h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .process-p {
+        font-size: 13px;
+        line-height: 150%;
+    }
+    .process-web {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    
+}

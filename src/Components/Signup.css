@@ -1,0 +1,158 @@
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    /* max-width: 40%; */
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    /* background-color: #1a1a1a; */
+    background: linear-gradient(145deg, #07182c, #0c243e);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border: 1px solid #333;
+  }
+  
+  .titles {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #00bfff;
+  }
+  
+  .titles::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .titles::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .titles::before,
+  .titles::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+  }
+  
+  .messages, 
+  .signins {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signins {
+    text-align: center;
+  }
+  
+  .signins a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .signins a {
+    color: #00bfff;
+  }
+  
+  .flexs {
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    gap: 6px;
+  }
+  #inputz {
+    width: 240px;
+  }
+  
+  .forms label {
+    position: relative;
+  }
+  
+  .forms label .inputs {
+    /* background-color: #333; */
+    background-color: rgba(17, 24, 39, 1);
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  .forms label .inputs + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .forms label .inputs:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .forms label .inputs:focus + span,
+  .forms label .inputs:valid + span {
+    color: #00bfff;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  .inputs {
+    font-size: medium;
+  }
+  
+  .submits {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #07182c;
+  }
+  
+  .submits:hover {
+    background-color: #00bfff96;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+    .forms {
+        width: 95%;
+    }
+    .flexs {
+        flex-direction: column;
+    }
+    #inputz {
+        width: 100%;
+    }
+}

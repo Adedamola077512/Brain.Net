@@ -1,0 +1,112 @@
+.cost-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.cost-span {
+    border: 2px solid rgb(246, 102, 102);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 400;
+}
+.cost-h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 20px;
+    
+}
+.cost-p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
+    /* line-height: 152%; */
+    letter-spacing: 0%;
+    
+}
+.cost-input {
+    /* background-color: #091c37; */
+    background: linear-gradient(145deg, #07182c, #0c243e);
+    height: 420px;
+    width: 350px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+.cost-h4 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+}
+#input {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(199, 105, 105);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+#input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    background-color: #d17a75;
+}
+#input::placeholder {
+    color: white;
+    font-size: 13px;
+}
+.cost-btn {
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    color: white;
+    margin: 5px 0;
+    background-color: rgb(247, 52, 52);
+    height: 40px;
+    border-radius: 20px;
+}
+.cost-btn:hover {
+    background-color: #e33838;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .cost-flex {
+        margin-top:  -80px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .cost-h1 {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 25px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .cost-p {
+        font-size: 9px;
+    }
+    .cost-input {
+        width: 90%;
+        height: 90%;
+    }
+    .cost-h4 {
+        font-size: 20px;
+    }
+}

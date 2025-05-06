@@ -1,0 +1,132 @@
+/* Background and section */
+.testimonials-section {
+  background-color: #0a1c37;
+  padding: 60px 0;
+}
+
+/* See more button */
+.btn-see-more {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-see-more:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Swiper container */
+.testimonials-slider {
+  padding: 20px 0;
+}
+.small {
+  text-align: left;
+}
+/* Testimonial card */
+.testimonial-card {
+  background-color: #1c1f2b;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Avatar image */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Stars */
+.stars {
+  color: #ef4444;
+  font-size: 18px;
+}
+
+.star {
+  margin-right: 3px;
+}
+
+/* Custom Controls under swiper */
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Button style for custom controls */
+.btn-control {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  /* padding-bottom: 10px; */
+  width: 50px;
+  height: 20px;
+  border-radius: 30%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.icon {
+  font-size: 25px;
+  color: white;
+  margin-top: -25px;
+}
+.btn-control:hover {
+  background-color: #dc2626;
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+  background: #9ca3af;
+
+  opacity: 1;
+}
+
+.swiper-pagination {
+  display: none !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ef4444;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-section {
+    margin:auto;
+    /* padding: 0px 0; */
+    /* width: 100%; */
+  }
+
+  .testimonial-card {
+    min-height: 250px;
+  }
+
+  .btn-see-more {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .btn-control {
+    width: 40px;
+    height: 20px;
+    font-size: 20px;
+  }
+  
+}

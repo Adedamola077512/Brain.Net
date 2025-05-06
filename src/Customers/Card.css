@@ -1,0 +1,94 @@
+.card-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.Card {
+    /* background-color: #091c37; */
+    background: linear-gradient(145deg, #07182c, #0c243e);
+    height: 530px;
+    width: 380px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+    display: grid;
+    /* place-items: center; */
+}
+.Card-read {
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(245, 83, 83);
+}
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+.Card-h5 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 10px;
+    vertical-align: middle;
+    
+}
+.Card-h4 {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.Card-p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: -0.14px;
+    vertical-align: middle;
+}
+.Card-pp {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10.5px;
+    /* letter-spacing: -0.14px; */
+    vertical-align: middle;
+}
+.Card-img {
+    width: 330px;
+    height: 330px;
+}
+
+@media screen and (max-width: 600px) {
+    .card-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .Card {
+        width: 100%;
+    }
+    .Card-img {
+        width: 100%;
+        height: 100%;
+    }
+    .Card-h5 {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    .Card-p {
+        font-size: 9px;
+    }
+    .Card-h4 {
+        font-size: 14.5px;
+    }
+    .Card-pp {
+        font-size: 9px;
+    }
+}
