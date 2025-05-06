@@ -1,5 +1,5 @@
 import React from 'react'
-import './project.css'
+import './Project.css'
 import img58 from '../assets/img-58.png'
 import img57 from '../assets/img-57.png'
 import img56 from '../assets/img-56.png'
