@@ -1,5 +1,5 @@
 import React from 'react';
-import './FAQS.css';
+import './FAQs.css';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Accordion } from 'react-bootstrap';
 
